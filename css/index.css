@@ -4,19 +4,11 @@ header{
     font-family: 'EB Garamond', serif;
     background-image: url(../img/gradient-bg.jpg);
 }
-.principal{
+main{
     font-family: 'Hind', sans-serif;
 }
 
-.rodape{
+footer{
     font-family: 'Jost', sans-serif;
+    background-image: url(../img/gradient-bg.jpg);
 }
-
-/* .redes-sociais ul{
-    display: inline !important;
-    float: left ;
-}
-.redes-sociais ul li{
-    float: left !important;
-    
-} */
