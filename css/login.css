@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Hind&family=Jost&display=swap');
+
+header{
+    font-family: 'EB Garamond', serif;
+    background-image: url(../img/gradient-bg.jpg);
+}
+main{
+    font-family: 'Hind', sans-serif;
+}
+
+footer{
+    font-family: 'Jost', sans-serif;
+    background-image: url(../img/gradient-bg.jpg);
+}
