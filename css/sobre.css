@@ -1,0 +1,13 @@
+body{
+    background-color: #C7F9CC;
+}
+
+.texto{
+    
+}
+
+.mapa, .altura_iframe{
+    height: 300px;
+    border-radius: 2rem;
+    box-shadow: 0.2rem 1rem 1rem #000;
+}

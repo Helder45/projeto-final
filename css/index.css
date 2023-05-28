@@ -1,14 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Hind&family=Jost&display=swap');
+/*
+    Pallettes
 
-header{
-    font-family: 'EB Garamond', serif;
-    background-image: url(../img/gradient-bg.jpg);
-}
+    #22007C;
+
+    #140152;
+
+    #04052E;
+
+    #02010A;
+*/
+
 main{
     font-family: 'Hind', sans-serif;
 }
 
-footer{
-    font-family: 'Jost', sans-serif;
-    background-image: url(../img/gradient-bg.jpg);
+.item-carrossel{
+    height: 30rem;
+}
+
+.item-carrossel .img-carrossel{
+    height: 30rem;
+    object-fit: cover;
+    filter: blur(0.2rem) brightness(0.2);
+
+}
+
+@media screen and (max-width: 680px) {
+    .item-carrossel{
+        height: 20rem;
+    }
+    .item-carrossel .img-carrossel{
+        height: 20rem;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 515px) {
+    .item-carrossel{
+        height: 15rem;
+    }
+    .item-carrossel .img-carrossel{
+        height: 15rem;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .item-carrossel{
+        height: 10rem;
+    }
+    .item-carrossel .img-carrossel{
+        height: 10rem;
+        object-fit: cover;
+    }
 }
