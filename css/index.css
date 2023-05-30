@@ -26,22 +26,29 @@ main{
 }
 
 .minha-card{
-    width: 30rem;
-    margin: 1rem 0;
-    border: 1rem #000;
+    width: 20rem;
+    margin: 2rem 0;
+    border: 0.1rem solid #000;
+    border-radius: 1rem;
+    padding: 0.5rem 0.2rem;
 }
 
 .minha-card .img-card{
     width: 50%;
-}
-
-.minha-card .texto-card{
+    border: 0.1rem solid #000;
     margin: auto auto;
 }
 
-.minha-card .botao-card{
-    margin: 0;
-    padding: 0;
+.minha-card .conteudo-card{
+    /* border: 0.1rem solid #000; */
+    margin: auto auto;
+    padding: 0.3rem 0.3rem;
+    /* border-radius: 1rem; */
+}
+
+.minha-card .conteudo-card a{
+    margin-top: 1rem;
+    padding: 0.5rem 0.5rem;
 }
 
 @media screen and (max-width: 680px) {
