@@ -25,6 +25,25 @@ main{
 
 }
 
+.minha-card{
+    width: 30rem;
+    margin: 1rem 0;
+    border: 1rem #000;
+}
+
+.minha-card .img-card{
+    width: 50%;
+}
+
+.minha-card .texto-card{
+    margin: auto auto;
+}
+
+.minha-card .botao-card{
+    margin: 0;
+    padding: 0;
+}
+
 @media screen and (max-width: 680px) {
     .item-carrossel{
         height: 20rem;

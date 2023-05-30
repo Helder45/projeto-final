@@ -3,7 +3,7 @@ body{
 }
 
 .texto{
-    
+    text-align: justify;
 }
 
 .mapa, .altura_iframe{
