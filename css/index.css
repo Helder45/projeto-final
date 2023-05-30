@@ -64,6 +64,9 @@ main{
         height: 20rem;
         object-fit: cover;
     }
+    .texto-promo{
+        top: 5rem !important;
+    }
 }
 
 @media screen and (max-width: 515px) {
@@ -74,6 +77,9 @@ main{
         height: 15rem;
         object-fit: cover;
     }
+    .texto-promo{
+        top: 15% !important;
+    }
 }
 
 @media screen and (max-width: 380px) {
@@ -83,5 +89,8 @@ main{
     .item-carrossel .img-carrossel{
         height: 10rem;
         object-fit: cover;
+    }
+    .texto-promo{
+        top: -1rem !important;
     }
 }
