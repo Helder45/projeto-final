@@ -10,9 +10,13 @@
     #02010A;
 */
 
+body{
+    background-color: #C7F9CC;
+
+}
+
 main{
     font-family: 'Hind', sans-serif;
-    background-color: #C7F9CC;
 }
 
 .item-carrossel{
