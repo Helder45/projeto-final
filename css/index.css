@@ -42,7 +42,7 @@ main{
 .minha-card .img-card{
     width: 50%;
     height: 100%;
-    border: 0.1rem solid #000;
+    /* border: 0.1rem solid #000; */
     margin: auto auto;
     object-fit: contain;
 }
