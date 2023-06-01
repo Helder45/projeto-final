@@ -30,6 +30,14 @@ main{
 
 }
 
+.img-prop{
+    width: 10rem;
+}
+
+.img-prop2{
+    height: 10rem;
+}
+
 .minha-card{
     width: 20rem;
     height: 9rem;
@@ -57,12 +65,6 @@ main{
 .minha-card .conteudo-card a{
     margin-top: 1rem;
     padding: auto;
-}
-
-.js-style{
-    background-color: yellow;
-    color: black;
-    font-weight: bolder;
 }
 
 @media screen and (max-width: 680px) {
