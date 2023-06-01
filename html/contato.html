@@ -64,7 +64,7 @@
 
             </li>
             <li class="nav-item">
-              <a class="nav-link active"
+              <a class="nav-link"
                 href="login.html">Login</a>
             </li>
           </ul>
@@ -72,8 +72,8 @@
       </div>
     </nav>
     <div class="container mx-auto text-center py-4">
-      <h1 class="display-1 my-4">Olá! Seja bem-vindo ao Galaxy Courses!</h1>
-      <p class="display-6 my-2">Por favor, crie sua conta abaixo.</p>
+      <h1 class="display-1 my-4">Olá! Aqui você elimina dúvidas!</h1>
+      <p class="display-6 my-2">Se quiser, pode nos mandar um elogio! 😄</p>
       <hr class="table-group-divider">
     </div>
   </header>
@@ -82,10 +82,10 @@
 
     <section class="container px-1 py-0 my-0">
       <div class="login py-4 my-3">
-        <h1 class="text-center font-monospace login-title">Cadastro</h1>
+        <h1 class="text-center font-monospace login-title">Mensagem</h1>
         <form>
 
-          <div class="my-3 form-group was-validated">
+          <div class="my-3 form-group">
             <label class="form-label"
               for="nome">Nome<input class="form-control"
                 type="nome"
@@ -94,48 +94,37 @@
                 required></label>
           </div>
 
-          <div class="my-3 form-group was-validated">
+          <div class="my-3 form-group">
             <label class="form-label"
-              for="email">Endereço de Email<input class="form-control"
+              for="email">Email<input class="form-control"
                 type="email"
                 id="email"
                 placeholder="Insira seu email aqui!"
                 required></label>
           </div>
 
-          <div class="my-3 form-group was-validated">
+          <div class="my-3 form-group">
             <label class="form-label"
-              for="senha">Senha<input class="form-control"
-                type="password"
-                id="senha"
-                placeholder="Insira sua senha aqui!"
+              for="telefone">Celular<input class="form-control"
+                type="tel"
+                id="telefone"
+                placeholder="Insira seu telefone aqui!"
                 required></label>
           </div>
 
-          <div class="my-3 form-group was-validated">
+          <div class="my-3 form-group">
             <label class="form-label"
-              for="confirmaSenha">Confirmar a senha<input class="form-control"
-                type="password"
-                id="confirmaSenha"
-                placeholder="Repita sua senha aqui!"
-                required></label>
-              <div class="invalid-feedback">
-                É necessário confirmar a senha.
-              </div>
+              for="mensagem">Mensagem
+              <textarea class="form-control" name="mensagem" id="mensagem" rows="4" cols="22" maxlength="250"></textarea></label>
           </div>
 
-          <div class="form-check my-2 text-end">
-            <label class="form-check-label"
-              for="caixacheck"><input class="form-check-input"
-                type="checkbox"
-                id="caixacheck">Lembre-se de mim!</label>
-          </div>
-
-          <button class="btn btn-success w-100 mt-2"
-            type="submit">Cadastrar</button>
+          <button class="btn btn-success w-100 mt-2 mb-2"
+            type="submit">Enviar</button>
 
         </form>
       </div>
+    </section>
+
     </section>
   </main>
 
@@ -143,7 +132,7 @@
 
     <section class="container d-flex flex-wrap py-3 my-0">
 
-      <div class="container d-flex text-center flex-column align-items-center my-3">
+      <!-- <div class="container d-flex text-center flex-column align-items-center my-3"> -->
         <div class="row mt-4">
           <h1 class="text-center font-monospace">Acesse nossas redes sociais para ficar informado!</h1>
         </div>

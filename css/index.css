@@ -67,6 +67,11 @@ main{
     padding: auto;
 }
 
+.tamanho{
+    width: 50%;
+}
+
+
 @media screen and (max-width: 680px) {
     .item-carrossel{
         height: 20rem;
@@ -77,6 +82,16 @@ main{
     }
     .texto-promo{
         top: 5rem !important;
+    }
+    .img-prop{
+        width: 7rem;
+    }
+    
+    .img-prop2{
+        height: 7rem;
+    }
+    .tamanho{
+        width: 100%;
     }
 }
 
@@ -91,6 +106,14 @@ main{
     .texto-promo{
         top: 15% !important;
     }
+    .img-prop{
+        width: 5rem;
+    }
+    
+    .img-prop2{
+        height: 5rem;
+    }
+    
 }
 
 @media screen and (max-width: 380px) {
@@ -104,4 +127,12 @@ main{
     .texto-promo{
         top: -1rem !important;
     }
+    .img-prop{
+        width: 3rem;
+    }
+    
+    .img-prop2{
+        height: 3rem;
+    }
+    
 }
