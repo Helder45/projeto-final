@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Hind&family=Jost&display=swap');
+
+main{
+    font-family: 'Hind', sans-serif;
+}
+
+.minha-card{
+    width: 20rem;
+    height: 9rem;
+    margin: 2rem 0;
+    border: 0.1rem solid #000;
+    border-radius: 1rem;
+    padding: 0.5rem 0.2rem;
+}
+
+.minha-card .img-card{
+    width: 50%;
+    height: 100%;
+    margin: auto auto;
+    object-fit: contain;
+}
+
+.minha-card .conteudo-card{
+    margin: auto auto;
+    padding: 0.3rem 0.3rem;
+}
+
+.minha-card .conteudo-card a{
+    margin-top: 1rem;
+    padding: auto;
+}

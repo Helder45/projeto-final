@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Hind&family=Jost&display=swap');
+
+/* PALETTE
+    #22577A
+    #38A3A5
+    #57CC99
+    #80ED99
+    #C7F9CC
+*/
+
+body{
+    background-color: #C7F9CC;
+
+}
+
+main{
+    font-family: 'Hind', sans-serif;
+}
+
+.texto{
+    text-align: justify;
+}
+
+.thumb-img{
+    width: 500px;
+}
+
+.img-show{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1200px){
+    .thumb-img{
+        width: 400px;
+    }
+    .img-show{
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+    .thumb-img{
+        width: 100%;
+    }
+    .img-show{
+        width: 175px;
+        height: 200px;
+        object-fit: cover;
+    }
+    
+}
+
+@media screen and (max-width: 767px){
+    .img-show{
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+    }
+}
