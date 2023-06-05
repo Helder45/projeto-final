@@ -2,18 +2,22 @@ var option = {
   animation: true,
 };
 
-var campo = document.getElementById("email_nov");
+function alertar() {
+  var email = document.getElementById("email_nov");
 
-function toastReal() {
-  var myToast = document.getElementById("toast");
+  if (email !== null && email.value === "") {
 
-  var toastEl = new bootstrap.Toast(myToast, option);
+    var toastErr = document.getElementById("toastErr");
+    var toastErro = new bootstrap.Toast(toastErr, option);
+    toastErro.show();
 
-  if (campo !== null && campo.value === "") {
-    console.log(campo.value, typeof campo.value);
-    campo.setCustomValidity("Você precisa preencher este campo!");
+  } else {
+
+    var toastSuc = document.getElementById("toastSuc");
+    var toastNice = new bootstrap.Toast(toastSuc, option);
+    toastNice.show();
+    email.value = "";
+
   }
-
-  toastEl.show();
 
 }
