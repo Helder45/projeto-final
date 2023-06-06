@@ -208,7 +208,7 @@
           </div>
         </div>
 
-        <div class="tamanho d-flex flex-column justify-content-evenly align-items-center pt-5 pb-5">
+        <div class="tamanho d-flex flex-column justify-content-evenly align-items-center pt-5 pb-5">w
           <h1 class="display-4 mt-2 text-black fw-bold">Cursos variados de diversos conteúdos!</h1>
           <p class="display-5 text-primary fw-bold texto">O conhecimento é a chave para milhares de portas. Compre sua chave!</p>
         </div>
@@ -264,7 +264,6 @@
         </p>
 
         <form class="novidades">
-          <!-- <label class="my-4" for="email_nov">Digite seu e-mail aqui!</label> -->
           <input class="form-control my-2 tamanho-btn"
             type="email"
             name="email_nov"
@@ -273,9 +272,13 @@
             required />
 
           <input class="btn tamanho-btn btn-meu"
-            type="submit"
-            value="Me Inscreva!" />
+            type="button"
+            id="toastBtn"
+            value="Me Inscreva!"
+            onclick="alertar()" />
+
         </form>
+
       </div>
 
       <div class="container d-flex text-center flex-column align-items-center my-3">
@@ -314,7 +317,46 @@
         </div>
       </div>
     </section>
+
+    <div class="posicao p-0 p-md-3 w-100"
+      style="z-index: 15">
+      <div id="toastSuc"
+        class="toast hide bg-success"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true">
+        <div
+          class="toast-body text-white d-flex flex-row align-items-center justify-content-evenly justify-content-md-around m-0 p-2">
+          <button type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Close"></button>
+          <p class="fs-6">Cheque a caixa de entrada em seu email!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="posicao p-0 p-md-3 w-100"
+      style="z-index: 15">
+      <div id="toastErr"
+        class="toast hide bg-danger"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true">
+        <div
+          class="toast-body text-white d-flex flex-row align-items-center justify-content-evenly justify-content-md-around m-0 p-2">
+          <button type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Close"></button>
+          <p class="fs-6">Por favor, preencha o campo para continuar!</p>
+        </div>
+      </div>
+    </div>
+
   </footer>
+
+  <script src="../js/toast.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"

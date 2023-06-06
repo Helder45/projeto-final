@@ -177,7 +177,7 @@
             required />
 
           <input class="btn tamanho-btn btn-meu"
-            type="submit"
+            type="button"
             id="toastBtn"
             value="Me Inscreva!"
             onclick="alertar()" />
@@ -223,36 +223,38 @@
       </div>
     </section>
 
-    <div class="position-fixed top-0 end-0 p-3"
-      style="z-index: 11">
+    <div class="posicao p-0 p-md-3 w-100"
+      style="z-index: 15">
       <div id="toastSuc"
         class="toast hide bg-success"
         role="alert"
         aria-live="assertive"
         aria-atomic="true">
-        <div class="toast-body text-white d-flex flex-row align-items-center justify-content-around">
+        <div
+          class="toast-body text-white d-flex flex-row align-items-center justify-content-evenly justify-content-md-around m-0 p-2">
           <button type="button"
             class="btn-close"
             data-bs-dismiss="toast"
             aria-label="Close"></button>
-          Cheque sua caixa de entrada!
+          <p class="fs-6">Cheque a caixa de entrada em seu email!</p>
         </div>
       </div>
     </div>
 
-    <div class="position-fixed top-0 end-0 p-3"
-      style="z-index: 11">
+    <div class="posicao p-0 p-md-3 w-100"
+      style="z-index: 15">
       <div id="toastErr"
         class="toast hide bg-danger"
         role="alert"
         aria-live="assertive"
         aria-atomic="true">
-        <div class="toast-body text-white d-flex flex-row align-items-center justify-content-around">
+        <div
+          class="toast-body text-white d-flex flex-row align-items-center justify-content-evenly justify-content-md-around m-0 p-2">
           <button type="button"
             class="btn-close"
             data-bs-dismiss="toast"
             aria-label="Close"></button>
-          Por favor, preencha o campo corretamente!
+          <p class="fs-6">Por favor, preencha o campo para continuar!</p>
         </div>
       </div>
     </div>
