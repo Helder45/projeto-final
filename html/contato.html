@@ -115,17 +115,69 @@
           <div class="my-3 form-group">
             <label class="form-label"
               for="mensagem">Mensagem
-              <textarea class="form-control tamanho" name="mensagem" id="mensagem" rows="4" maxlength="250"></textarea></label>
+              <textarea class="form-control tamanho"
+                name="mensagem"
+                id="mensagem"
+                rows="4"
+                maxlength="250"></textarea></label>
           </div>
 
           <button class="btn btn-success w-100 mt-2 mb-2"
-            type="submit">Enviar</button>
+            type="button"
+            onclick="enviaMsg()">Enviar</button>
 
         </form>
       </div>
     </section>
 
-    </section>
+    <div class="posicao p-0 p-md-3 w-100 d-flex justify-content-center align-items-center"
+      style="z-index: 15">
+      <div id="toastConfirm"
+        class="toast hide bg-success tamanho_confirm"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true">
+        <div class="toast-header w-100 d-flex flex-row justify-content-center">
+          <button type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Close"></button>
+          <h2 class="ms-3">Parabéns! Você foi cadastrado!</h2>
+        </div>
+        <div
+          class="toast-body text-white d-flex flex-column align-items-center justify-content-center justify-content-md-around m-0 pt-2 p-3">
+          <img class="img-icon"
+            src="../img/success.png"
+            alt="Icone de sucesso">
+          <p class="fs-6 mt-2">Cadastro efetuado com sucesso!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="posicao p-0 p-md-3 w-100 d-flex justify-content-center align-items-center"
+      style="z-index: 15">
+      <div id="toastEmpty"
+        class="toast hide bg-warning tamanho_confirm"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true">
+        <div class="toast-header w-100 d-flex flex-row justify-content-center">
+          <button type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Close"></button>
+          <h2 class="ms-3">Oops! Cheque os campos!</h2>
+        </div>
+        <div
+          class="toast-body text-white d-flex flex-column align-items-center justify-content-center justify-content-md-around m-0 pt-2 p-3">
+          <img class="img-icon"
+            src="../img/attention.png"
+            alt="Icone de Aviso">
+          <p class="fs-6 mt-2">É preciso preencher todos os campos!</p>
+        </div>
+      </div>
+    </div>
+
   </main>
 
   <footer class="py-2">
@@ -168,6 +220,8 @@
       </div>
     </section>
   </footer>
+
+  <script src="../js/contato.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
