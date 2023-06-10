@@ -92,9 +92,6 @@
                 id="email"
                 placeholder="Insira seu email aqui!"
                 required></label>
-            <div class="invalid-feedback">
-              Por favor, digite seu endereço de email.
-            </div>
           </div>
 
           <div class="senha form-group was-validated">
@@ -104,9 +101,6 @@
                 id="senha"
                 placeholder="Insira sua senha aqui!"
                 required></label>
-            <div class="invalid-feedback">
-              Por favor, digite sua senha.
-            </div>
           </div>
 
           <div class="checkbox form-check my-2  text-end">
@@ -117,8 +111,9 @@
           </div>
 
           <input class="btn btn-success w-100 mt-2"
-            type="submit"
-            value="Login">
+            type="button"
+            value="Login"
+            onclick="confirmaLogin()">
 
         </form>
 
@@ -130,7 +125,54 @@
 
     </section>
 
-    </section>
+    <div class="posicao p-0 p-md-3 w-100 d-flex justify-content-center align-items-center"
+      style="z-index: 15">
+      <div id="toastConfirm"
+        class="toast hide bg-success tamanho_confirm"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true">
+        <div class="toast-header w-100 d-flex flex-row justify-content-center">
+          <button type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Close"></button>
+          <h2 class="ms-3">Parabéns! Você foi cadastrado!</h2>
+        </div>
+        <div
+          class="toast-body text-white d-flex flex-column align-items-center justify-content-center justify-content-md-around m-0 pt-2 p-3">
+          <img class="img-icon"
+            src="../img/success.png"
+            alt="Icone de sucesso">
+          <p class="fs-6 mt-2">Cadastro efetuado com sucesso!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="posicao p-0 p-md-3 w-100 d-flex justify-content-center align-items-center"
+      style="z-index: 15">
+      <div id="toastEmpty"
+        class="toast hide bg-warning tamanho_confirm"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true">
+        <div class="toast-header w-100 d-flex flex-row justify-content-center">
+          <button type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Close"></button>
+          <h2 class="ms-3">Oops! Cheque os campos!</h2>
+        </div>
+        <div
+          class="toast-body text-white d-flex flex-column align-items-center justify-content-center justify-content-md-around m-0 pt-2 p-3">
+          <img class="img-icon"
+            src="../img/attention.png"
+            alt="Icone de Aviso">
+          <p class="fs-6 mt-2">É preciso preencher todos os campos!</p>
+        </div>
+      </div>
+    </div>
+
   </main>
 
   <footer class="py-2">
@@ -172,6 +214,8 @@
       </div>
     </section>
   </footer>
+
+  <script src="../js/login.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"

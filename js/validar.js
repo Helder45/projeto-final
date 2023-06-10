@@ -29,9 +29,6 @@ function confirmaSub() {
 
     }
 
-    senha.onchange = validaSenha;
-    confirmaSenha.onkeyup = validaSenha;
-
   } else{
 
     var toastEmpty = document.getElementById("toastEmpty");
