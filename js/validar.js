@@ -8,7 +8,7 @@ var option = {
 };
 
 function confirmaSub() {
-  if (nome !== null && email !== null && senha !== null) {
+  if (nome !== null && nome.value !== "" && email !== null && email.value !== "" && senha !== null && senha.value !== "") {
 
     if (senha.value != confirmaSenha.value) {
 
@@ -31,6 +31,12 @@ function confirmaSub() {
 
     senha.onchange = validaSenha;
     confirmaSenha.onkeyup = validaSenha;
+
+  } else{
+
+    var toastEmpty = document.getElementById("toastEmpty");
+      var toastEmpty = new bootstrap.Toast(toastEmpty, option);
+      toastEmpty.show();
 
   }
 }
